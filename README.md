@@ -1,41 +1,106 @@
-<br />
-<div align="center">
-  <a href="#top">
-    <img src="https://raw.githubusercontent.com/khantorot/intra42/master/content/icons/logo.png" alt="logo" width="80" height="80">
-  </a>
+# Title
 
-  <h3 align="center">rtv1</h3>
+Description
 
-  <p align="center">
-    The fundamentals of Ray Tracing: the creation of computer generated images. Making simple scenes involving non-complex objects and lights.
-    <br />
-    <br />
-    <a href="#top">view project +</a>
-  </p>
-</div>
-<br />
+[`project`](https://khantorot.github.io/*)
 
+### Author
 
+Khantoro: [`khantorot.github.io`](https://khantorot.github.io)
 
+### Contact
 
+Email: [`khantorot@gmail.com`](mailto:khantorot@gmail.com)
 
-### about
+## Usage
 
-Task file - [rtv1.pdf](/rtv1.pdf)
+### Installation
 
+```bash
+git clone https://github.com/khantorot/*.git
+```
 
+### Environment
 
-<br />
+- Core Tools: [node](https://nodejs.org), [npm](https://npmjs.com), [vite](https://vitejs.dev)
+- Integrations: [vituum](https://vituum.dev), [postcss](https://postcss.org), [posthtml](https://posthtml.org)
+- Code quality: [prettier](https://prettier.io), [eslint](https://eslint.org), [stylelint](https://stylelint.io)
+- Utilities: [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks), [lint-staged](https://github.com/lint-staged/lint-staged)
 
+### Commands
 
+| Command           | Action                                                   |
+| ----------------- | -------------------------------------------------------- |
+| `npm install`     | Installs dependencies                                    |
+| `npm run dev`     | Starts local dev server                                  |
+| `npm run build`   | Build production site                                    |
+| `npm run preview` | Preview build locally, before deploying                  |
+| `npm run prepare` | Prepare `simple-git-hooks`, `lint-staged`                |
+| `npm run fix`     | Format, lint code with `prettier`, `eslint`, `stylelint` |
+| `npm run clean`   | Remove `dist`, `node_modules`                            |
 
-### contact
+### Structure
 
-Email - khantorot@gmail.com
+```
+┌─ dist
+├─ node_modules
+│
+│─ public
+│  ├─ doc
+│  └─ img
+│     ├─ common
+│     └─ icon
+│
+├─ src
+│  ├─ assets
+│  │  ├─ css
+│  │  └─ js
+│  │
+│  ├─ components
+│  ├─ layouts
+│  └─ pages
+│
+└─ vite.config.js
+```
 
+## Setup
 
+```bash
+npm create vite@latest
+```
 
+### Node
 
+```bash
+node -v > .nvmrc
+```
 
-<br />
-<p align="center"><a href="#top">back to top ↑</a></p>
+```bash
+nvm use
+```
+
+### Integrations
+
+```bash
+npm i -D vituum @vituum/vite-plugin-postcss @vituum/vite-plugin-posthtml
+```
+
+### Code quality
+
+```bash
+npm i -D prettier
+```
+
+```bash
+npm i -D eslint eslint-config-standard eslint-config-prettier
+```
+
+```bash
+npm i -D stylelint stylelint-config-standard stylelint-config-recess-order
+```
+
+### Utilities
+
+```bash
+npm i -D lint-staged simple-git-hooks
+```
